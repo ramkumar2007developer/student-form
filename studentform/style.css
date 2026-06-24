@@ -1,0 +1,59 @@
+body {
+    font-family: Arial,sans-serif;
+    background: white;
+    text-align: center;
+    background-image:url("form.jpeg");
+    background-size: cover;
+    
+
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-table,
+#studentTable {
+    border-collapse: collapse;
+    background-color: white;
+
+}
+
+.form-table td,
+#studentTable th,
+#studentTable td {
+    border: 1px solid black;
+    padding: 5px;
+    
+}
+
+input,
+select {
+    padding: 4px;
+}
+
+#saveBtn {
+    width: 100%;
+    background-color: rgb(79, 239, 79);
+    border: 1px solid black;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#studentTable {
+    margin: auto;
+}

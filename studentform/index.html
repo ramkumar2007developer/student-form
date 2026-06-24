@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>STUDENT FORM 📝</h1>
+
+    <div class="form-container">
+        <table class="form-table">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" id="name" placeholder="Enter your name"></td>
+            </tr>
+
+            <tr>
+                <td>Age:</td>
+                <td><input type="number" id="age" placeholder="Enter your age"></td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Course:</td>
+                <td>
+                    <select id="course">
+                        <option>SQL</option>
+                        <option>Python</option>
+                        <option>Java</option>
+                        <option>C++</option>
+                        <option>C Programming</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>E-mail:</td>
+                <td><input type="email" id="email" placeholder="Enter your email"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <button id="saveBtn">Save</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>COURSE</th>
+                <th>GENDER</th>
+                <th>EMAIL</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
